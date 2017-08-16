@@ -15,7 +15,8 @@ def get_su_url_dict():
             x = soup.contents[0].contents[3].contents[1].contents[3].contents[1].contents[1].contents[1].contents[3].contents[4].contents[i].contents[5].a
             url = str(x).strip().split('"')[1]
             year = str(x).strip().split('"')[2].split('>')[1][:4]
-            data_dict[year] = url
+            if len(year) == 4:
+                data_dict[year] = url
         except:
             pass
     
@@ -23,7 +24,8 @@ def get_su_url_dict():
             x = soup.contents[0].contents[3].contents[1].contents[3].contents[1].contents[1].contents[1].contents[3].contents[4].contents[i].contents[7].a
             url = str(x).strip().split('"')[1]
             year = str(x).strip().split('"')[2].split('>')[1][:4]
-            data_dict[year] = url
+            if len(year) == 4:
+                data_dict[year] = url
         except:
             pass
     
@@ -31,7 +33,8 @@ def get_su_url_dict():
             x = soup.contents[0].contents[3].contents[1].contents[3].contents[1].contents[1].contents[1].contents[3].contents[4].contents[i].contents[9].a
             url = str(x).strip().split('"')[1]
             year = str(x).strip().split('"')[2].split('>')[1][:4]
-            data_dict[year] = url
+            if len(year) == 4:
+                data_dict[year] = url
         except:
             pass
 
@@ -39,10 +42,9 @@ def get_su_url_dict():
             x = soup.contents[0].contents[3].contents[1].contents[3].contents[1].contents[1].contents[1].contents[3].contents[4].contents[i].contents[11].a
             url = str(x).strip().split('"')[1]
             year = str(x).strip().split('"')[2].split('>')[1][:4]
-            data_dict[year] = url
+            if len(year) == 4:
+                data_dict[year] = url
         except:
             pass
-                           
+    
     return (data_dict)
-
-
