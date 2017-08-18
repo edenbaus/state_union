@@ -4,20 +4,6 @@ from get_state_unions import get_su_url_dict
 from bs4 import BeautifulSoup
 import requests
 
-
-#url = {'2007-GWBush':'http://www.presidency.ucsb.edu/ws/index.php?pid=24446',
-#       '2008-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=76301',
-#       '2009-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=85753',
-#       '2010-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=87433',
-#       '2011-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=88928',
-#       '2012-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=99000',
-#       '2013-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=102826',
-#       '2014-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=104596',
-#       '2015-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=108031',
-#       '2016-Obama':'http://www.presidency.ucsb.edu/ws/index.php?pid=111174',
-#       '2017-Trump':'http://www.presidency.ucsb.edu/ws/index.php?pid=123408'
-#       }
-
 url = get_su_url_dict()
 
 for year,link in url.items():
